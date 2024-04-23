@@ -1,0 +1,382 @@
+/* Clases para hacer que la página sea más bonita */
+
+:root {
+  --primary: #d60905;
+  --secondary: #999999;
+  --tertiary: #ffffff;
+  --cuaternary: #f7df7f;
+  --quinary: #000000;
+  --navbar-altura: 90px;
+  --duracion-default: 0.2s;
+  --pancarta-altura: 450px;
+}
+
+body {
+  margin: 0px;
+  cursor: url("assets/Cursor1.png") 37 50, auto;
+}
+
+
+.navegacion {
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: var(--navbar-altura);
+  border-bottom: 4px solid var(--quinary);
+}
+
+.borde-bajo {
+  border-bottom: 4px solid var(--quinary);
+}
+
+.espaciador {
+  height: var(--navbar-altura);
+}
+
+.contenedor-navegacion-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  text-decoration: none;
+}
+
+.contenedor-navegacion-opciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  font-size: 1.7em;
+  margin-right: 10%;
+  color: var(--tertiary);
+}
+
+.contenedor-navegacion-opciones:hover {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  font-size: 2em;
+  margin-right: 10%;
+  color: var(--tertiary);
+}
+
+.navegacion-opciones {
+  color: var(--tertiary);
+  text-decoration: none;
+  transition-duration: var(--duracion-default);
+  cursor: url("assets/Cursor2.png") 47 63, auto;
+  
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+}
+
+.navegacion-opciones:hover {
+  color: var(--tertiary);
+  text-decoration: none;
+  scale: 1.3;
+  transition-duration: var(--duracion-default);
+}
+
+.resaltar:hover {
+  color: var(--cuaternary);
+  scale: 1.3;
+  transition-duration: 0.2s;
+}
+
+.resaltar {
+  color: var(--cuaternary);
+  background-color: var(--primary);
+  border-radius: 10px;
+  padding: 5px;
+  scale: 1;
+  transition-duration: 0.2s;
+}
+
+.titulo-navegacion {
+  color: var(--tertiary);
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.titulo-principal {
+  color: var(--tertiary);
+  font-size: 4em;
+  margin: 0px 0px;
+  padding: 0px;
+
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: url("assets/Cursor1.png") 37 50, auto;
+}
+
+.titulo-primario {
+  color: var(--primary);
+  font-size: 3em;
+  margin: 0;
+
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: url("assets/Cursor1.png") 37 50, auto;
+
+}
+
+.titulo-secundario {
+  color: var(--tertiary);
+  font-size: 2em;
+  margin: 0;
+
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: url("assets/Cursor1.png") 37 50, auto;
+}
+
+.pancarta-principal {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary);
+  align-items: center;
+  width: 100%;
+}
+
+.pancarta-secundario {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--tertiary);
+}
+
+.contenedor-izquierdo {
+  width: 50%;
+  padding: 10px;
+  height: 100%;
+}
+
+.contenedor-mitad {
+  width: 50%;
+  height: 100%;
+}
+
+.contenedor-derecho {
+  width: 50%;
+  margin: 0px 0px;
+}
+
+.contenedor-triple {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100vw;
+  align-items: center;
+  align-items: center;
+  /* grid-column: 1; */
+}
+
+.imagen-contenida {
+  width: 100%;
+  height: auto;
+  margin: 0px 0px;
+}
+
+.imagen-consolas:hover {
+  scale: 1.4;
+  cursor: url("assets/Cursor3.png") 50 52, auto;
+}
+
+.imagen-estandar {
+  width: auto;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.contenedor-imagen-generico {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.parrafo {
+  font-size: 2em;
+  color: var(--tertiary);
+  margin: 0 15px 25px 15px;
+  align-items: center;
+  vertical-align: middle;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.parrafo-oscuro {
+  font-size: 2em;
+  color: var(--quinary);
+  margin: 0 15px 25px 15px;
+  align-items: center;
+  vertical-align: middle;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.parrafo-espaciado {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pancarta-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/BannerImagen.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  height: 700px;
+  /* filter: brightness(50%); */
+}
+
+.gameplay-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/Gameplay1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  height: 700px;
+}
+
+.gameplay-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/Gameplay2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  height: 700px;
+}
+
+.imagen-consolas {
+  height: 350px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  transition-duration: var(--duracion-default);
+  cursor: url("assets/Cursor3.png") 50 52, auto;
+}
+
+.boton-comprar {
+  font-size: 3em;
+  margin: auto;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--primary);
+  color: var(--tertiary);
+  transition-duration: var(--duracion-default);
+  cursor: url("assets/Cursor3.png") 50 52, auto;
+}
+
+.enlace-elemento{
+  width: 33%;
+  text-align: center;
+}
+
+.boton-comprar:hover {
+  transition-duration: var(--duracion-default);
+  scale: 1.5;
+  color: var(--cuaternary);
+}
+
+.contenedor-comprar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+
+.enlace-sin-estilo {
+  text-decoration: none;
+  color: inherit;
+}
+
+.personajes-grid{
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+a {
+  cursor: url("assets/Cursor3.png") 50 52, auto;
+}
+
+
+/* Clases para las fuentes */
+
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Clases para estilizar el scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tertiary); 
+}
+
+
